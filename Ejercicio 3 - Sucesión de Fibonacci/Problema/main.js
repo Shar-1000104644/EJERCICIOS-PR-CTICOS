@@ -23,18 +23,21 @@
 // 	document.body.appendChild(letra);
 // }
 
-            var var1 = 0;
-            var var2 = 1;
-            var var3;
- 
-            document.write(var1+"");
-            document.write(var2+"");
- 
-            for(var i=3; i <= numero;i++)
-            {
-                var3 = var1 + var2;
-                var1 = var2;
-                var2 = var3;
-                document.write(var3+"");
-            }
-        
+function calcular(){
+    var numero=parseInt(document.getElementById('dato').value);
+    var var1 = 0;
+    var var2 = 1;
+    var var3;
+
+
+    for(var i=3; i<=numero; i++)
+    {
+        var3 = var1 + var2;
+        var1 = var2;    
+        var2 = var3;
+    var letra = document.createElement('p');
+    letra.innerHTML(var1 + ' ');
+    letra.innerHTML(var2 + ' ');
+    letra.innerHTML(var3 + ' ');
+    }    
+}
