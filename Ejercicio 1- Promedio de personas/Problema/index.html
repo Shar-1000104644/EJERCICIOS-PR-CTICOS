@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"></html>
 <head>
-  <meta charset="UTF-8">
-  <title>Promedio de personas</title>
+  <meta charset="UTF-8"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
 </head>
-<body>
+<body class="text-center"><strong>
+    <h1>EJERCICIO UNO</h1></strong>
+  <h2>#Promediar alturas</h2>
+  <div class="operacion"><br/>
+    <input id="dato" type="text" placeholder="Ingresa la estatura" class="btn btn-warning"/>
+    <button type="button" onclick="registrarEstatura()">Registrar</button>
+    <button type="button" onclick="promediar()">Promediar</button>
+    <ul id="mostrarDatos"></ul>
+  </div>
   <script type="text/javascript" src="main.js"></script>
 </body>
-</html>
