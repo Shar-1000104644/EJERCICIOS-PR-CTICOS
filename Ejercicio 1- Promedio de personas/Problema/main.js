@@ -24,24 +24,13 @@ function updateList(){
 	}
 } 
 
-var suma = 0;
-
 function promediar(){
-	suma= suma+estatura[i];
-	var promedio = suma/i;
-	var letra=document.createElement('h1');
-	var l=document.createTextNode('El promedio de las ' + i + 'ingresadas es: ' + promedio);
-	letra.appendChild(l);
-	document.body.appendChild(letra);
-
+  var suma=0;
+  var promedio=0;
+  for(var i=0; i<estatura.length ;i++){
+    suma+=parseFloat(estatura[i]);
+  }
+  promedio=suma/estatura.length;
+  var promedioFinal=document.getElementById('resultado');
+  promedioFinal.innerHTML="Promedio" + promedio.toFixed(2);  
 }
-
-
-// var edad=[],suma=0,promedio;
-// var num=parseInt(prompt("¿Cuántos alumnos se registrarán?"));
-// for (var i = 1; i <= num; i++) {
-// 	edad[i]=parseInt(prompt("¿Cuál es la edad del alumno nro "+i+"?"));
-// 	suma=suma+edad[i];
-// }
-// promedio=suma/num;
-// alert("El promedio de las "+num+" edades ingresadas es "+promedio);
