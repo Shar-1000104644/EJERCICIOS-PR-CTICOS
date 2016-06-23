@@ -5,10 +5,16 @@
   <title>Igual o menor a 0</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
 </head>
-<body class="text-center">
-  <h1>Ejercicio dos</h1>
-  <h3>#Igual o menor a 0</h3>
-  <input id="numero" placeholder="Ingresa un número"/><br/><br/>
-  <button onclick="ingresarNumero()">Registrar</button><br/><br/>
-  <button onclik="calcular()">Calcular</button>
+<body class="text-center"><strong>
+    <h1>EJERCICIO DOS</h1></strong>
+  <h2>#Igual o menor a 0</h2>
+  <div class="operacion"><br/>
+    <input id="dato" type="text" placeholder="Ingresa diversos números" class="btn btn-warning"/>
+    <button type="button" onclick="registrarNumeros()">Registrar</button>
+    <button type="button" onclick="identificar()">Clasificar</button><br/>
+    <h2>Lista de clasificación</h2><br/><br/>
+    <p id="resultadoMenor" class="col-md-6"></p>
+    <p id="resultadoMayor" class="col-md-6"></p>
+  </div>
+  <script type="text/javascript" src="main.js"></script>
 </body>

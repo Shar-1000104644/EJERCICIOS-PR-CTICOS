@@ -5,16 +5,38 @@
 //  Realice el diagrama de flujo y el pseudocódigo para representarlo, 
 //  utilizando el ciclo apropiado.
 
-var numerosLista=[];
+var listaMenor = [];
+var listaMayor = [];
 
-function ingresarNumero(){
-	var numeroIngresado=document.getElementById('numero').value;
-	if(!isNaN(numeroIngresado)){
-			document.getElementById('numero').value=' ';
-			numerosLista.push(numeroIngresado);
-			var letra=document.createElement('p');
+function registrarNumeros(){
+var numero = document.getElementById('dato').value;
+	if(!isNaN(numero)){
+		if(numero<=0){
+			listaMenor.push(numero);
+			document.getElementById('dato').value =' ';
+			mostrarNumerosMenor();
+		}else{
+			listaMayor.push(numero);
+			document.getElementById('dato').value =' ';
+			mostrarNumerosMayor();
+		}
 	}else{
-		document.write('Escribe un número')
+		alert('Solo debes ingresar números');
 	}
+}
 
+function mostrarNumerosMenor(){
+	var escribirLista=document.getElementById('resultadoMenor');
+	escribirLista.innerHTML=' ';
+	for(var i=0; i<listaMenor.length; i++){
+		escribirLista.innerHTML+='<p>' + 'Este número es menor que cero: ' +  listaMenor[i] + '</p>';
+	}
+}
+
+function mostrarNumerosMayor(){
+	var escribirLista=document.getElementById('resultadoMayor');
+	escribirLista.innerHTML=' ';
+	for(var i=0; i<listaMayor.length; i++){
+		escribirLista.innerHTML+='<p>' + 'Este número es mayor que cero: ' +  listaMayor[i] + '</p>';
+	}
 }
