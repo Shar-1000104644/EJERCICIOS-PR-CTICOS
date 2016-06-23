@@ -11,11 +11,19 @@ var listaMayor = [];
 function registrarNumeros(){
 var numero = document.getElementById('dato').value;
 	if(!isNaN(numero)){
-		if(numero<=0){
+		if(numero<0){
 			listaMenor.push(numero);
 			document.getElementById('dato').value =' ';
 			mostrarNumerosMenor();
-		}else{
+		}else if(numero==0){
+			document.getElementById('dato').value =' ';
+			var cero =document.createElement('h4');
+			var c=document.createTextNode('Este número es cero');
+			cero.appendChild(c);
+			document.body.appendChild(cero);
+			
+		}
+		else{
 			listaMayor.push(numero);
 			document.getElementById('dato').value =' ';
 			mostrarNumerosMayor();
