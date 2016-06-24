@@ -1,13 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"></html>
 <head>
-  <meta charset="UTF-8">
-  <title>Ahorro</title>
+  <meta charset="UTF-8"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
 </head>
-<body>
-	Dinero <input type="text" id="cantidad"> 
-	Mes del año <input type="text" id="mes"> 
-	<button onclick="wao()">Ingresar</button>
-  <script type="text/javascript" src="main.js"></script>
+<body class="text-center">
+  <div class="row">
+    <form class="inline-form"></form>
+    <div class="col-md-4">
+      <h4>Monto</h4>
+      <input id="monto" placeholder="S/0.00" class="form-control"/>
+    </div>
+    <div class="col-md-4">
+      <h4>Mes</h4>
+      <select id="mes" name="meses">
+        <option value="enero">Enero</option>
+        <option value="febrero">Febrero</option>
+        <option value="marzo">Marzo</option>
+        <option value="abril">Abril</option>
+        <option value="mayo">Mayo</option>
+        <option value="junio">Junio</option>
+        <option value="julio">Julio</option>
+        <option value="agosto">Agosto</option>
+        <option value="setiembre">Setiembre</option>
+        <option value="octubre">Octubre</option>
+        <option value="noviembre">Noviembre</option>
+        <option value="diciembre">Diciembre</option>
+      </select>
+    </div>
+    <div class="col-md-4"><br/><br/>
+      <button type="submit" onclick="ahorrar()">Depositar</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-1">
+      <h5 id="enero">Enero</h5>
+    </div>
+    <div class="col-md-1">
+      <h5 id="febrero">Febrero</h5>
+    </div>
+    <div class="col-md-1">
+      <h5 id="marzo">Marzo</h5>
+    </div>
+    <div class="col-md-1">
+      <h5 id="abril">Abril</h5>
+    </div>
+    <div class="col-md-1">
+      <h5 id="mayo">Mayo</h5>
+    </div>
+    <div class="col-md-1">
+      <h5 id="junio">Junio</h5>
+    </div>
+    <div class="col-md-1">
+      <h5 id="julio">Julio</h5>
+    </div>
+    <div class="col-md-1">
+      <h5 id="agosto">Agosto</h5>
+    </div>
+    <div class="col-md-1">
+      <h5 id="setiembre">Setiembre</h5>
+    </div>
+    <div class="col-md-1">
+      <h5 id="octubre">Octubre</h5>
+    </div>
+    <div class="col-md-1">
+      <h5 id="noviembre">Noviembre</h5>
+    </div>
+    <div class="col-md-1">
+      <h5 id="diciembre">Diciembre</h5>
+    </div>
+  </div>
+  <div class="row">
+    <h3>En este año ahorraste S/.<span id="montoFinal">0.00</span></h3>
+  </div>
 </body>
-</html>
