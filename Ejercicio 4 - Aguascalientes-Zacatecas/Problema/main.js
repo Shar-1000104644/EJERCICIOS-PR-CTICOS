@@ -1,19 +1,25 @@
 //Escribe aquí tú código
-
-var posicionA=parseInt(document.getElementById('a').value);
-var posicionB=parseInt(document.getElementById('b').value);
-var distancia;
-var puntoMedio;
-var puntoEncuentro;
-
 function calcular(){
+
+	var posicionA=document.getElementById('a').value;
+	posicionA=parseInt(posicionA);
+
+	var posicionB=document.getElementById('b').value;
+	posicionB=parseInt(posicionB);
+
+	var distancia,puntoMedio,puntoEncuentro;
+
 	distancia=posicionB-posicionA;
+
 	puntoMedio=distancia/2;
+
 	puntoEncuentro=posicionA+puntoMedio;
-	alert(puntoEncuentro);
+
+	escribir(puntoEncuentro);
+
 }
 
-// function mostrar(){
-// 	var letra = document.getElementById('mostrar');
-// 	letra.innerHTML='';
-// }
+function escribir(_texto){
+	var letra = document.getElementById('mostrar');
+	letra.innerHTML='Se encontraran en el kilometro' + ' ' +_texto;
+}
