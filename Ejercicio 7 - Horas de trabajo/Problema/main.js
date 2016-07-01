@@ -16,3 +16,8 @@ dias.push(sueldo);
 	
 }
 
+var dias = new Array();
+dias['lunes']= 1,2,3;
+dias['martes']= 4,5,6;
+dias['miercoles']= 7,8;
+dias['jueves']= 9;

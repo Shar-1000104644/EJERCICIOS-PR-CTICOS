@@ -1,0 +1,71 @@
+h2.text-center Tienda de autoservicios
+br
+.container
+  .row#inicio
+    //- button.btn.btn-primary Registrar Ventas
+    //- button.btn.btn-primary Configuracion
+  .row.config
+  
+    label Registrar nueva ciudad
+    input#new_ciudad
+    button.btn.btn-primary(onclick="agregarCiudad()") Registrar
+    br
+    br
+    
+    label Registrar nueva tienda: 
+    input#new_tienda
+    button(onclick="agregarTienda()").btn.btn-primary Registrar
+  .row.ryg
+    .col-md-6
+      br
+      h3.text-center Registro de venta
+      hrs
+      form
+          //- .form-group
+          label Nombre de Empleado
+          input.form-control#empleado(placeholder="Juanito")
+          //- .form-group
+          label Ciudad
+          select.form-control#ciudad
+          label Tienda
+          select.form-control#tienda
+          //- .form-group
+          label Venta diaria
+          input.form-control#venta_diaria
+        p.text-center
+          button.btn.btn-success(onclick="registrarVenta()") Registrar
+      br
+
+
+    .col-md-6
+      br
+      h3.text-center Reporte de ganancias
+      hr
+      .reporte
+        
+        .form-group
+          h4 Su cadena de autoservicios generó S/.<span id="monto_total"> 0.00 </span> de ganancia
+        br
+        .form-group
+          .col-md-8
+             label Ciudad
+             select.form-control#ganancia_ciudad
+              
+             
+          .col-md-4
+            label Monto
+            p S/. <span id="monto_ciudad"> 0.00 </span> 
+         br
+
+        .form-group
+          br
+          .col-md-8
+             label Tienda
+             select.form-control#ganancia_tienda
+               option Choco
+               option Mandiles
+               option Glace
+          .col-md-4
+            label Monto
+            p S/. <span id="monto_tienda"> 0.00 </span> 
+      button.btn.btn-danger(onclick="ganancias()") Generar Reporte
