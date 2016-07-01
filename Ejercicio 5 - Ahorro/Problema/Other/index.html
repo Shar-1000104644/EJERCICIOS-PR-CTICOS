@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Ahorro</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+	<div class="container">
+
+		<h1>Sistema de registro de ahorros anuales</h1>
+		<div class="row">
+			<div class="col-md-6">
+				<h3>Ingresar ahorros</h3>
+				<!-- Inicio del formulario -->
+				<form id="form_ahorro" class="form" action="index.html" method="post">
+
+					<div class="form-group">
+						<label for="monto">Ingresa el monto</label>
+						<input type="text" class="form-control" id="monto" name="monto" value="" id="monto" placeholder="S/.">
+					</div>
+
+					<div class="form-group">
+						<label for="meses">Elige el mes</label>
+						<select name="meses" class="form-control" id="meses"> </select>
+					</div>
+					<p class="text-center">
+						<button type="submit" class="btn btn-primary" name="button">Registrar ahorro</button>
+					</p>
+				</form>
+				<p class="text-center">
+					<button class="btn btn-danger btn-sm" onclick="registrarPerdida()">Registrar perdida</button>
+				</p>
+
+				<!-- fin del formulario -->
+
+
+			</div>
+			<div class="col-md-6">
+				<h3>Reporte de ahorros</h3>
+				<ul id="reporte_meses" class="list-group">
+					<li class="list-group-item alert alert-warning">No haz ahorrado nada aún</li>
+				</ul>
+				<hr>
+				<div class="well well-sm">
+					<h4>Este año llevas ahorrado:</h4>
+					<h1>S/ <span id="monto_anual">0.00</span></h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

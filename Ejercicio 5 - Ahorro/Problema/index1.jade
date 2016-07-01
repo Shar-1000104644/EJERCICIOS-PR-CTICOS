@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Document
+	<!-- Latest compiled and minified CSS -->
+	link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
+
+	<!-- Optional theme -->
+	link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous")
+
+
+body.text-center
+	.row
+		form.inline-form
+		.col-md-4
+			h4 Monto
+			input#monto(class='form-control' placeholder='S/0.00')
+		.col-md-4
+			h4 Mes
+			select#mes(name='meses')
+				option(value='enero') Enero
+				option(value='febrero') Febrero
+				option(value='marzo') Marzo
+				option(value='abril') Abril
+				option(value='mayo') Mayo
+				option(value='junio') Junio
+				option(value='julio') Julio
+				option(value='agosto') Agosto
+				option(value='setiembre') Setiembre
+				option(value='octubre') Octubre
+				option(value='noviembre') Noviembre
+				option(value='diciembre') Diciembre
+		.col-md-4
+			br
+			br
+			button(type='submit' onclick='ahorrar()') Depositar
+
+	.row
+		.col-md-1
+			h5#enero Enero
+		.col-md-1
+			h5#febrero Febrero
+		.col-md-1
+			h5#marzo Marzo
+		.col-md-1
+			h5#abril Abril
+		.col-md-1
+			h5#mayo Mayo
+		.col-md-1
+			h5#junio Junio
+		.col-md-1
+			h5#julio Julio
+		.col-md-1
+			h5#agosto Agosto
+		.col-md-1
+			h5#setiembre Setiembre
+		.col-md-1
+			h5#octubre Octubre
+		.col-md-1
+			h5#noviembre Noviembre
+		.col-md-1
+			h5#diciembre Diciembre
+	.row
+		h3 En este año ahorraste S/.
+			span#montoFinal 0.00
+
+
+	script(src='main.js')
+	<!-- Latest compiled and minified JavaScript -->
+	script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous")

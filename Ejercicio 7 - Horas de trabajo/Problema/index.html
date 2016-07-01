@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"></html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>Horas de trabajo</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
 </head>
 <body>
-  <script type="text/javascript" src="main.js"></script>
+  <div class="container">
+    <h2 class="text-center">EJERCICIO SIETE</h2>
+    <h5 class="text-center">#Horas de trabajo</h5>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Horas que trabajaste</h3>
+        <input id="hora" placeholder="S/. 0.00"/>
+        <h3>Indica tu sueldo</h3>
+        <input id="sueldo" placeholder="S/. 0.00"/>
+        <h3>Selecciona el día</h3>
+        <select>
+          <option value="0">Lunes</option>
+          <option value="1">Martes</option>
+          <option value="2">Miércoles</option>
+          <option value="3">Jueves</option>
+          <option value="4">Viernes</option>
+          <option value="5">Sábado</option>
+        </select>
+        <p><br/><br/>
+          <button onclick="calcular()">Calcular</button>
+        </p>
+      </div>
+      <div class="col-md-6"></div>
+    </div>
+  </div>
+  <script src="main.js"></script>
 </body>
-</html>

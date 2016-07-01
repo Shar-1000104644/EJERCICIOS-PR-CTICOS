@@ -1,12 +1,33 @@
 //Escribe aquí tú código
 
-// var meses = [];
-
-// function iniciarAplicacion(){
-// 	var dinero = document.getElementById('monto');
+var meses =['enero','febrero', 'marzo','abril','mayo','junio','julio','agosto','setiembre','octubre','noviembre','diciembre'];
+var ahorros=[23,32,23];
 
 
-// 	var m =['enero','febrero', 'marzo','abril','mayo','junio','julio','agosto','setiembre','octubre','noviembre','diciembre'];
+$(document).ready(initApp);
+
+function initApp(){
+	updateSelectMeses();
+}
+
+
+function updateSelectMeses(){
+	var select= document.getElementById('meses');
+	for(var i=0; i<meses.length; i++){
+		select.innerHTML += '<opcion value="" ' + i + ' ">" ' + meses[i] + '</option>'
+	}
+}
+
+
+function updateReport(){ 
+	var listaReport = document.getElementById('reporte_meses');
+	var montoAnual = document.getElementById('monto_anual');
+
+	for (var i =0,  i<ahorros.length; i++) {
+		listaReport.innerHTML+='<li>' + ahorros[i] + '</li>'
+	}
+}
+
 // 	meses['enero']=0;
 // 	meses['febrero']=0;
 // 	meses['marzo']=0;
@@ -29,21 +50,30 @@
 //  }
 
 
-// Declarar
-    Rectangulo[] rectangulos;
-// Crear el array
-	rectangulos=new Rectangulo[3];
-// Inicializar los elementos del array
-	rectangulos[0]=new Rectangulo(10, 20, 30, 40);
-	rectangulos[1]=new Rectangulo(30, 40);
-	rectangulos[2]=new Rectangulo(50, 80);
-// O bien, en una sola línea
 
-	Rectangulo[] rectangulos={new Rectangulo(10, 20, 30, 40), 
-		new Rectangulo(30, 40), new Rectangulo(50, 80)};
-// Usar el array
-// Para calcular y mostrar el área de los rectángulos escribimos
 
-	for(int i=0; i<rectangulos.length; i++){
-		System.out.println(rectangulos[i].calcularArea());
-	}
+
+
+
+
+
+
+
+// // Declarar
+//     Rectangulo[] rectangulos;
+// // Crear el array
+// 	rectangulos=new Rectangulo[3];
+// // Inicializar los elementos del array
+// 	rectangulos[0]=new Rectangulo(10, 20, 30, 40);
+// 	rectangulos[1]=new Rectangulo(30, 40);
+// 	rectangulos[2]=new Rectangulo(50, 80);
+// // O bien, en una sola línea
+
+// 	Rectangulo[] rectangulos={new Rectangulo(10, 20, 30, 40), 
+// 		new Rectangulo(30, 40), new Rectangulo(50, 80)};
+// // Usar el array
+// // Para calcular y mostrar el área de los rectángulos escribimos
+
+// 	for(int i=0; i<rectangulos.length; i++){
+// 		System.out.println(rectangulos[i].calcularArea());
+// 	}

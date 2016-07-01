@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Horas de trabajo
+	link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
+body
+	.container
+		h2.text-center EJERCICIO SIETE
+		h5.text-center #Horas de trabajo
+		.row
+			.col-md-6
+				h3 Horas que trabajaste
+				input#hora(placeholder='S/. 0.00')
+
+				h3 Indica tu sueldo
+				input#sueldo(placeholder='S/. 0.00')
+
+				h3 Selecciona el día
+				select
+					option(value="0") Lunes
+					option(value="1") Martes
+					option(value="2") Miércoles
+					option(value="3") Jueves
+					option(value="4") Viernes
+					option(value="5") Sábado
+
+
+				p
+					br
+					br
+					button(onclick='calcular()') Calcular
+			.col-md-6
+
+				
+	script(src='main.js')

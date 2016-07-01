@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"></html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>Mayores a 0</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
 </head>
-<body>
-  <script type="text/javascript" src="main.js"></script>
+<body class="text-center">
+  <h2>EJERCICIO SEIS</h2>
+  <h5>#Cuántos números son menores o iguales a cero y cuántas mayores a cero.</h5>
+  <input id="numero" placeholder="Escribe un número"/>
+  <button onclick="identificar()" class="btn btn-warning">Clasificar</button>
+  <div class="row">
+    <h1 id="grande" class="alert alert-warning"></h1>
+  </div>
+  <div class="row">
+    <div id="a" class="col-md-4 thumbnail"></div>
+    <div id="b" class="col-md-4 thumbnail"></div>
+    <div id="c" class="col-md-4 thumbnail"></div>
+  </div>
+  <script src="main.js"></script>
 </body>
-</html>
