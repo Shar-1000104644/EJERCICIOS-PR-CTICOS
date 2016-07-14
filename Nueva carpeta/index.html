@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Tiendas el Mandilon</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Tiendas el Mandilon <small>Sistema de registro de ventas</small></h1>
+		</div>
+
+		<hr>
+		<div class="row">
+			<div class="col-md-6">
+				<h3>MANTENIMIENTO DE TIENDAS</h3>
+				<div class="well form-inline">
+					Agregar Ciudad:
+					<input type="text" id="nombre_ciudad" class="form-control" placeholder="Nombre de ciudad">
+					<button type="button" class="btn btn-primary" name="button" onclick="agregarCiudad()">Agregar ciudad</button>
+				</div>
+				<div class="well form-inline">
+					Agregar Tienda:
+					<input type="text" id="nombre_tienda" class="form-control">
+					<select name="select_ciudad" id="select_ciudad" class="form-control">
+						<option value="0">Arequipa</option>
+						<option value="1">Lima</option>
+					</select>
+					<button class="btn btn-primary" type="button" name="button" onclick="agregarTienda()">Agregar tienda</button>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<h3>TOTAL VENTA DEL DÍA</h3>
+				<div class="jumbotron text-center">
+					<h1>S/ <span id="venta_anual">0.00</span></h1>
+				</div>
+				<h3>VENTAS POR EMPLEADO</h3>
+				<div id="ciudades"></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="main_objetos.js"></script>
+</body>
+
+</html>
