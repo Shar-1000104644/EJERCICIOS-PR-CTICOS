@@ -1,0 +1,13 @@
+body, small{
+	font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4
+{
+	font-family: "Roboto Condensed", sans-serif;
+}
+
+.nombre, .monto
+{
+width: 80px;
+}
