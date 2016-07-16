@@ -6,6 +6,7 @@ var a_monto_emp=[];
 // arrays para rellenar
 var a_ciudad_select=["Paleta","Galleta"];
 var a_tienda_select=["Choco","Mandiles","Glace"];
+
 // $(document).ready(initApp());
 
 $(document).ready(initApp);
@@ -37,6 +38,7 @@ function empleado(){
   this.tienda="";
   this.monto=0;
 }
+
 function registrarVenta(){
   var nombre_empleado = new empleado();
   nombre_empleado.nombre= $('#empleado').val();

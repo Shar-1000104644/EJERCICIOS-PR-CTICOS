@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Igual o menor a 0
+	link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
+body.text-center
+	strong
+		h1 EJERCICIO DOS
+	h2 #Igual o menor a 0
+	.operacion
+		br			
+		input#dato(type="text" placeholder='Ingresa diversos números' class='btn btn-warning')
+		button(type='button' onclick="registrarNumeros()") Registrar
+		button(type='button' onclick="identificar()") Clasificar
+		br
+		h2 Lista de clasificación
+		br
+		br
+		p#resultadoMenor.col-md-6
+		p#resultadoMayor.col-md-6
+		
+
+	script(type="text/javascript" src="main.js")
